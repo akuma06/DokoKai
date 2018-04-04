@@ -1,2 +1,10 @@
 version:
   name: Akume
+env: DEVELOPMENT
+http:
+  host: localhost
+  port: 9000
+  draininterval: 1s
+  certfile:
+  keyfile:
+  web: localhost
