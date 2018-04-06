@@ -1,0 +1,12 @@
+{* We extend the base template *}
+{{ extends "partials/base" }}
+
+{* We apply the menu in the base template *}
+{{ block menu()}}
+{{end}}
+
+{{block titleBase()}} - {{block title()}}{{end}}{{end}}
+
+{{ block content_body_base()}}
+{{ block content_body()}}{{end}}
+{{end}}

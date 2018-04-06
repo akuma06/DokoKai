@@ -105,12 +105,3 @@ func commentifyString(in string) string {
 	}
 	return strings.Join(newlines, "\n")
 }
-
-// trimSrcPath trims at the beginning of absPath the srcPath.
-func trimSrcPath(absPath, srcPath string) string {
-	relPath, err := filepath.Rel(srcPath, absPath)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	return relPath
-}
